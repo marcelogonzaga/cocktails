@@ -1,0 +1,23 @@
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  background: red;
+}
+
+.left {
+  background: yellow;
+}
+
+.right {
+  background: orange;
+}
