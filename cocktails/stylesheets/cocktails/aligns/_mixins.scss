@@ -1,0 +1,4 @@
+$aligns-position:left !default;
+@mixin ctAligns($postition:$aligns-position) {
+	text-align: $postition;	
+}

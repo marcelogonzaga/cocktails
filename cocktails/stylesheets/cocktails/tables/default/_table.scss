@@ -1,0 +1,44 @@
+
+.table { 
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.table div{
+    color:#555;
+}
+.table th{
+    color:#777;
+    padding:8px;
+    @include font-size(13);
+    text-align:left;
+    background-color:#ffffff;
+}
+.table td:first-child{
+    @include font-size(14);
+    font-weight:bold;
+}
+.table td{
+    color:#444;
+    @include font-size(12);
+    padding:10px;
+    vertical-align:middle;
+    border-bottom-radius:5px;
+    border-top:1px solid #ddd;
+}
+
+.table td div, .table th div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cell1{
+    background-color:rgba(255, 255, 255, 0.3);
+}
+.cell2{
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+.align-right{
+    text-align: right;
+}

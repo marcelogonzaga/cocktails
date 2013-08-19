@@ -1,6 +1,8 @@
-@import "../structure/all";
+@import 
+	"../mixins",
+	"../var";
 
 @import 
 	"center",
 	"left",
-	"right";
+	"right"; 

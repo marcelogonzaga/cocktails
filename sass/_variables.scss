@@ -1,0 +1,56 @@
+// prefix
+$sep : "-";
+$p: "zh" + $sep;
+
+//body
+$body-background: #f0eeea;
+$body-font-color: #222;
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+$body-font-style: normal;
+
+// components
+$comp-container-padding: 10px;
+
+/*devices*/
+$deviceSmall: "only screen and (max-width: 479px)";
+$deviceMedium: "only screen and (min-width: 480px) and (max-width: 767px)";
+$deviceLarge: "only screen and (min-width: 768px)";
+
+/*fonte*/
+$fontFamily: "Arial", Helvetica, sans-serif !default;
+
+/*header - footer*/
+$header-size:56px;
+$footer-size:45px;
+
+/*radius*/
+$radiusMinimum:5px;
+$radiusSmall:10px;
+$radiusMedium:15px;
+$radiusLarge:20px;
+$radiusMax:25px;
+
+$radiusTop:10px 10px 0 0;
+$radiusBottom:0 0 10px 10px;
+
+/*cores*/
+$corBackground: #ebe7df;
+
+$bar1: #ac6e30;
+$bar2: #281807;
+$bar3: #5C3512;
+$bar4: #321D0A;
+$barSombra: #6C5236;
+$barLinha: #967e63;
+
+$corGradientRed1: #ce021c;
+$corGradientRed2: #890e1b;
+
+$corGradientGreen1: #99cc00;
+$corGradientGreen2: #006600;
+
+//grid
+$grid-columns:12;
+$grid-width:100%;
+$grid-spacer:1%;

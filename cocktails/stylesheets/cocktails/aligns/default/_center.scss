@@ -1,4 +1,5 @@
+$aligns-position:center !default;
 .center{
-	@extend .center;
-	background: red; 
+	@include ctAligns;
+	background: red;
 }

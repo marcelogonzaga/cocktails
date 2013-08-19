@@ -1,0 +1,109 @@
+input, textarea, select {
+	font-family: inherit;
+	@include font-size(13) ;
+	font-weight: inherit;
+	-webkit-appearance: none;
+	border: none;
+}
+input, textarea {
+	-webkit-user-select: text;
+}
+
+.form {
+	@extend %container;
+}
+ 
+.form h3 {
+	margin:2em 1% .8%;
+	padding: 0.5% 0.5% 0.8%;
+}
+
+
+.form .clear {clear:both;}
+.form-no-lbl {position:relative;padding-bottom:0;}
+.form-no-lbl input,  .form-no-lbl label,  .form-no-lbl span,  .form-no-lbl ul,  .form-no-lbl p {position:absolute;bottom:0;}
+
+
+.form .left {
+	clear:none;
+	float:left !important;
+	margin-right:0.3em !important;
+}
+.form .right {
+	clear:none;
+	float:right !important;
+	margin-left:0.3em !important;
+}
+
+
+
+.form-list .form-lbl, .form-list label {
+	display: inline;
+	height: auto;
+	margin: 0.5em 0 0.8em 2px;
+}
+.form-req {
+	position: relative;
+	top:3px;
+}
+
+.form-msg-info, .form-msg-warning, .form-msg-error, .form-msg-success {
+	padding:20px 20px 15px 38px;
+	border: 1px solid #ccc;
+	display: block;
+	height: auto;
+	margin: 0 1.5% 0.8em;
+	clear:both;
+}
+.form-msg-info li, .form-msg-warning li, .form-msg-error li, .form-msg-success li {
+	list-style: none;
+	padding:0;  
+	margin-bottom: .4%;
+	@include font-size(14);
+	line-height:1.1em;
+	vertical-align: top;
+}
+
+
+
+.form-button, .form input[type="submit"], .form input[type="button"], .form input[type="reset"] {
+	padding:8px 15px 9px;
+	cursor: pointer;
+	text-align: center;
+	display:inline-block;
+	border:1px solid #D4D4D4;
+}
+
+
+.form-list {
+	height: 100%;
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+.form-list li, .form-list li {
+	margin: 0.5em 0.6em 0.8em;
+	float:left;
+	display: inline-block;
+	list-style:none;
+}
+.form-list input {margin-right: 0.2em}
+
+
+.form-small {
+	width: 30% !important;
+	float:left;
+	margin-right: 10px;
+	display:inline;
+
+	*width: 25% !important;
+}
+
+.form-medium {
+	width: 50% !important;
+	float:left;
+	margin-right: 10px;
+	display:inline;
+
+	*width: 45% !important;
+}

@@ -1,4 +1,5 @@
+$aligns-position:right !default;
 .right{
-	@extend .right; 
-	background: orange; 
+	@include ctAligns;
+	background: gray;
 }

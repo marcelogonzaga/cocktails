@@ -1,4 +1,5 @@
+$aligns-position:left !default;
 .left{
-	@extend .left;
+	@include ctAligns;
 	background: yellow;
 }

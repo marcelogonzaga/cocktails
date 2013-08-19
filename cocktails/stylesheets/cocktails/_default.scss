@@ -1,2 +1,34 @@
- @import
- 	"aligns/default";
+@import 
+	"compass/css3";
+
+@import
+ 	"cocktails/global"; 
+
+@import
+ 	"cocktails/aligns/default/all",
+ 	"cocktails/animations/default/all",
+ 	"cocktails/badges/default/all",
+ 	"cocktails/bases/default/all",
+ 	"cocktails/boxes/default/all",
+ 	"cocktails/breadcrumbs/default/all",
+ 	"cocktails/buttons/default/all",
+ 	"cocktails/carousels/default/all",
+ 	"cocktails/fonts/default/all",
+ 	"cocktails/forms/default/all",
+ 	"cocktails/graphics/default/all",
+ 	"cocktails/hides/default/all",
+ 	"cocktails/icons/default/all",
+ 	"cocktails/layouts/default/all",
+ 	"cocktails/lists/default/all",
+ 	"cocktails/mediaQueries/default/all",
+ 	"cocktails/menus/default/all",
+ 	"cocktails/messages/default/all",
+ 	"cocktails/paginators/default/all",
+ 	"cocktails/progress/default/all",
+ 	"cocktails/scrollers/default/all",
+ 	"cocktails/tables/default/all",
+ 	"cocktails/tabs/default/all",
+ 	"cocktails/thumbs/default/all",
+ 	"cocktails/toolbars/default/all",
+ 	"cocktails/tooltips/default/all",
+ 	"cocktails/wizards/default/all";
