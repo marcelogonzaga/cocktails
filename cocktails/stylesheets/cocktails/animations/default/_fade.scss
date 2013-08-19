@@ -1,0 +1,32 @@
+
+
+fade
+
+.fade.in {
+  opacity: 1;
+  -webkit-animation-name: fadein;
+  -moz-animation-name: fadein;
+}
+
+@-webkit-keyframes fadein {
+  0% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1; 
+  }
+}
+
+.fade.out {
+  opacity: 0;
+  -webkit-animation-name: fadeout;
+}
+
+@-webkit-keyframes fadeout {
+  0% { 
+    opacity: 1; 
+  }
+  100% { 
+    opacity: 0; 
+  }
+}

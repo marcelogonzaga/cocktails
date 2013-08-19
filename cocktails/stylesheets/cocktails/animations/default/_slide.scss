@@ -1,0 +1,133 @@
+
+.viewport {
+  // margin: 0;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  outline: none; 
+
+}
+
+.viewport-transitioning,
+.viewport-transitioning .#{$p}window {
+  // width: 100%;
+  // height: 100%;
+  overflow: hidden;
+  @include boxSizing;
+}
+
+.in,.infull {
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 300ms;
+  z-index:9;
+}
+
+.out,.outfull {
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 200ms;
+  z-index:9;
+}
+
+
+//slide left
+.slideLeft.in {
+  -webkit-transform: translateX(0%);
+  -webkit-animation-name: slideinfromright;
+}
+
+@-webkit-keyframes slideinfromright {
+  0% { 
+    @include transform(translateX(100%));
+  }
+  100% {
+    @include transform(translateX(0%));
+  }
+}
+
+.slideLeft.out {
+  -webkit-transform: translateX(100%);
+  -webkit-animation-name: slideouttoright;
+}
+
+@-webkit-keyframes slideouttoright {
+  0% {
+    @include transform(translateX(0%));
+  }
+  100% {
+    @include transform(translateX(100%));
+  }
+}
+
+
+
+//slide right
+
+.slideRight.in {
+  -webkit-transform: translateX(0);
+  -webkit-animation-name: slideinfromleft;
+}
+
+@-webkit-keyframes slideinfromleft {
+  0% { 
+    @include transform(translateX(-100%));
+  }
+  100% { 
+    @include transform(translateX(0%));
+  }
+}
+
+.slideRight.out {
+  -webkit-transform: translateX(-100%);
+  -webkit-animation-name: slideouttoleft;
+}
+
+@-webkit-keyframes slideouttoleft {
+  0% {
+    @include transform(translateX(0%));
+  }
+  100% {
+    @include transform(translateX(-100%));
+  }
+}
+
+//slide up e slide down
+.slideUp.in {
+  -webkit-transform: translateY(0);
+  -webkit-animation-name: slideinfrombottom;
+}
+
+.slideDown.out {
+  -webkit-transform: translateY(-100%);
+  -webkit-animation-name: slideinfrombottom;
+}
+
+@-webkit-keyframes slideinfrombottom {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(100%); 
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+
+.slideUp.out {
+  -webkit-animation-name: slideouttotop;
+}
+
+.slideDown.in {
+  -webkit-transform: translateY(0);
+  -webkit-animation-name: slideouttotop;
+}
+@-webkit-keyframes slideouttotop {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0); 
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(100%); 
+  }
+}
+
