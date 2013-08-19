@@ -1,0 +1,39 @@
+
+/* Container */
+%container{
+    @if $grid-spacer != 0 {
+    margin-left:$grid-spacer / 2;
+    margin-right:$grid-spacer / 2;
+  } 
+  @extend %clearfix;
+}
+
+/* Grid */
+%cols{
+  display:inline;
+  float: left;
+  position: relative;
+  @include boxSizing;
+  
+  @if $grid-spacer != 0 {
+    margin-left:$grid-spacer / 2;
+    margin-right:$grid-spacer / 2;
+  } 
+}
+
+
+/* Grid system */
+@for $i from 1 through $grid-columns {
+	.col-#{$i} {
+		@extend %cols; 
+		width: $grid-width / $grid-columns * $i - $grid-spacer;
+	}
+}
+
+/* Grid system */
+@for $i from 1 through $grid-columns {
+	.off-#{$i} {
+		@extend %cols; 
+		left: $grid-width / $grid-columns * $i - $grid-spacer;
+	}
+}

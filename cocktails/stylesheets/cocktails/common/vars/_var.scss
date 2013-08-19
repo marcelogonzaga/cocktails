@@ -50,7 +50,8 @@ $corGradientRed2: #890e1b;
 $corGradientGreen1: #99cc00;
 $corGradientGreen2: #006600;
 
+
 //grid
-$grid-columns:12;
-$grid-width:100%;
-$grid-spacer:1%;
+$grid-columns:12 !default; 
+$grid-width:100% !default;
+$grid-spacer:1% !default;
