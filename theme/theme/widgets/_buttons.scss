@@ -1,0 +1,379 @@
+@import "../global";
+// .icon {
+//     @include button($type:ico);
+// }
+// .button {
+//     @include button($type:red);
+//     @include gradientRed;
+// }
+// .green {
+//     @include button($type:green);
+//     @include gradientGreen;
+// }
+// .iconButton {
+//     @include button($type:iconButton);
+// }
+
+    
+.#{$p}btn {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-bottom: 0;
+   @include font-size(14);
+  font-weight: 500;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.#{$p}btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.#{$p}btn:hover,
+.#{$p}btn:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.#{$p}btn:active,
+.#{$p}btn.active {
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.#{$p}btn.disabled,
+.#{$p}btn[disabled],
+fieldset[disabled] .#{$p}btn {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.#{$p}btn-default {
+  color: #ffffff;
+  background-color: #474949;
+  border-color: #474949;
+}
+
+.#{$p}btn-default:hover,
+.#{$p}btn-default:focus,
+.#{$p}btn-default:active,
+.#{$p}btn-default.active {
+  background-color: #3a3c3c;
+  border-color: #2e2f2f;
+}
+
+.#{$p}btn-default.disabled,
+.#{$p}btn-default[disabled],
+fieldset[disabled] .#{$p}btn-default,
+.#{$p}btn-default.disabled:hover,
+.#{$p}btn-default[disabled]:hover,
+fieldset[disabled] .#{$p}btn-default:hover,
+.#{$p}btn-default.disabled:focus,
+.#{$p}btn-default[disabled]:focus,
+fieldset[disabled] .#{$p}btn-default:focus,
+.#{$p}btn-default.disabled:active,
+.#{$p}btn-default[disabled]:active,
+fieldset[disabled] .#{$p}btn-default:active,
+.#{$p}btn-default.disabled.active,
+.#{$p}btn-default[disabled].active,
+fieldset[disabled] .#{$p}btn-default.active {
+  background-color: #474949;
+  border-color: #474949;
+}
+
+.#{$p}btn-primary {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+
+.#{$p}btn-primary:hover,
+.#{$p}btn-primary:focus,
+.#{$p}btn-primary:active,
+.#{$p}btn-primary.active {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
+
+.#{$p}btn-primary.disabled,
+.#{$p}btn-primary[disabled],
+fieldset[disabled] .#{$p}btn-primary,
+.#{$p}btn-primary.disabled:hover,
+.#{$p}btn-primary[disabled]:hover,
+fieldset[disabled] .#{$p}btn-primary:hover,
+.#{$p}btn-primary.disabled:focus,
+.#{$p}btn-primary[disabled]:focus,
+fieldset[disabled] .#{$p}btn-primary:focus,
+.#{$p}btn-primary.disabled:active,
+.#{$p}btn-primary[disabled]:active,
+fieldset[disabled] .#{$p}btn-primary:active,
+.#{$p}btn-primary.disabled.active,
+.#{$p}btn-primary[disabled].active,
+fieldset[disabled] .#{$p}btn-primary.active {
+  background-color: #428bca;
+  border-color: #428bca;
+}
+
+.#{$p}btn-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.#{$p}btn-warning:hover,
+.#{$p}btn-warning:focus,
+.#{$p}btn-warning:active,
+.#{$p}btn-warning.active {
+  background-color: #eea236;
+  border-color: #ec971f;
+}
+
+.#{$p}btn-warning.disabled,
+.#{$p}btn-warning[disabled],
+fieldset[disabled] .#{$p}btn-warning,
+.#{$p}btn-warning.disabled:hover,
+.#{$p}btn-warning[disabled]:hover,
+fieldset[disabled] .#{$p}btn-warning:hover,
+.#{$p}btn-warning.disabled:focus,
+.#{$p}btn-warning[disabled]:focus,
+fieldset[disabled] .#{$p}btn-warning:focus,
+.#{$p}btn-warning.disabled:active,
+.#{$p}btn-warning[disabled]:active,
+fieldset[disabled] .#{$p}btn-warning:active,
+.#{$p}btn-warning.disabled.active,
+.#{$p}btn-warning[disabled].active,
+fieldset[disabled] .#{$p}btn-warning.active {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.#{$p}btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+.#{$p}btn-danger:hover,
+.#{$p}btn-danger:focus,
+.#{$p}btn-danger:active,
+.#{$p}btn-danger.active {
+  background-color: #d43f3a;
+  border-color: #c9302c;
+}
+
+.#{$p}btn-danger.disabled,
+.#{$p}btn-danger[disabled],
+fieldset[disabled] .#{$p}btn-danger,
+.#{$p}btn-danger.disabled:hover,
+.#{$p}btn-danger[disabled]:hover,
+fieldset[disabled] .#{$p}btn-danger:hover,
+.#{$p}btn-danger.disabled:focus,
+.#{$p}btn-danger[disabled]:focus,
+fieldset[disabled] .#{$p}btn-danger:focus,
+.#{$p}btn-danger.disabled:active,
+.#{$p}btn-danger[disabled]:active,
+fieldset[disabled] .#{$p}btn-danger:active,
+.#{$p}btn-danger.disabled.active,
+.#{$p}btn-danger[disabled].active,
+fieldset[disabled] .#{$p}btn-danger.active {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+.#{$p}btn-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.#{$p}btn-success:hover,
+.#{$p}btn-success:focus,
+.#{$p}btn-success:active,
+.#{$p}btn-success.active {
+  background-color: #4cae4c;
+  border-color: #449d44;
+}
+
+.#{$p}btn-success.disabled,
+.#{$p}btn-success[disabled],
+fieldset[disabled] .#{$p}btn-success,
+.#{$p}btn-success.disabled:hover,
+.#{$p}btn-success[disabled]:hover,
+fieldset[disabled] .#{$p}btn-success:hover,
+.#{$p}btn-success.disabled:focus,
+.#{$p}btn-success[disabled]:focus,
+fieldset[disabled] .#{$p}btn-success:focus,
+.#{$p}btn-success.disabled:active,
+.#{$p}btn-success[disabled]:active,
+fieldset[disabled] .#{$p}btn-success:active,
+.#{$p}btn-success.disabled.active,
+.#{$p}btn-success[disabled].active,
+fieldset[disabled] .#{$p}btn-success.active {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.#{$p}btn-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+
+.#{$p}btn-info:hover,
+.#{$p}btn-info:focus,
+.#{$p}btn-info:active,
+.#{$p}btn-info.active {
+  background-color: #46b8da;
+  border-color: #31b0d5;
+}
+
+.#{$p}btn-info.disabled,
+.#{$p}btn-info[disabled],
+fieldset[disabled] .#{$p}btn-info,
+.#{$p}btn-info.disabled:hover,
+.#{$p}btn-info[disabled]:hover,
+fieldset[disabled] .#{$p}btn-info:hover,
+.#{$p}btn-info.disabled:focus,
+.#{$p}btn-info[disabled]:focus,
+fieldset[disabled] .#{$p}btn-info:focus,
+.#{$p}btn-info.disabled:active,
+.#{$p}btn-info[disabled]:active,
+fieldset[disabled] .#{$p}btn-info:active,
+.#{$p}btn-info.disabled.active,
+.#{$p}btn-info[disabled].active,
+fieldset[disabled] .#{$p}btn-info.active {
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+
+
+
+.#{$p}btn-large {
+  padding: 14px 16px;
+   @include font-size(18);
+  border-radius: 6px;
+}
+
+.#{$p}btn-small,
+.#{$p}btn-mini {
+  padding: 5px 10px;
+ @include   font-size(12);
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.#{$p}btn-mini {
+  padding: 3px 5px;
+}
+
+.#{$p}btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.#{$p}btn-block + .#{$p}btn-block {
+  margin-top: 5px;
+}
+
+
+
+// /**
+//  * @class Ext.Button
+//  */
+//  .#{$p}btn{
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   background-color: #eee;
+//   border: 1px solid #cccccc;
+//   position: relative;
+//   overflow: hidden;
+//   z-index: 1;
+// }
+// .#{$p}btn .#{$p}btn-icon{
+//   position: relative;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+// .#{$p}btn .#{$p}btn-icon.#{$p}shown{
+//   display: block;
+// }
+// .#{$p}btn .#{$p}btn-icon.#{$p}hidden{
+//   display: none;
+// }
+
+// .#{$p}iconalign-left,
+// .#{$p}icon-align-right{
+//   -webkit-box-orient: horizontal;
+//   -ms-flex-direction: row;
+//   flex-direction: row;
+// }
+
+// .#{$p}iconalign-top,
+// .#{$p}iconalign-bottom{
+//   -webkit-box-orient: vertical;
+//   -ms-flex-direction: column;
+//   flex-direction: column;
+// }
+
+// .#{$p}iconalign-bottom,
+// .#{$p}iconalign-right{
+//   -webkit-box-direction: reverse;
+//   -ms-flex-direction: row-reverse;
+//   flex-direction: row-reverse;
+// }
+
+// .#{$p}iconalign-center{
+//   -webkit-box-pack: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+// }
+
+// .#{$p}btn-label, .#{$p}badge, .#{$p}hasbadge .#{$p}badge{
+//   -webkit-box-flex: 1;
+//   -ms-flex: 1 0 auto;
+//   flex: 1 0 auto;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   white-space: nowrap;
+//   text-overflow: ellipsis;
+//   text-align: center;
+//   display: block;
+//   overflow: hidden;
+// }
+
+// .#{$p}badge{
+//   background-color: #ccc;
+//   border: 1px solid #aaaaaa;
+//   z-index: 2;
+//   position: absolute !important;
+//   width: auto;
+//   @include font-size(6);
+//   right: 0;
+//   top: 0;
+//   max-width: 95%;
+//   display: inline-block;
+// }

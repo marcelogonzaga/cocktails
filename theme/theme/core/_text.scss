@@ -1,0 +1,39 @@
+@import '../global';
+
+body{
+  font-family:$body-font-family;
+  font-weight: normal;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-size-adjust: none;
+  @include font-size(13);
+}
+pre,
+code{
+  font-family: "DejaVu Sans Mono", Monaco, Consolas, monospace;
+}
+hr{
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+h1{
+  @include font-size(25);
+}
+h2{
+  @include font-size(23);
+}
+h3{
+  @include font-size(21);
+}
+h4{
+  @include font-size(19);
+}
+h5{
+  @include font-size(17);
+}
+h6{
+  @include font-size(15);
+}

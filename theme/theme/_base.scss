@@ -1,0 +1,27 @@
+/*core*/
+@import "core/reset";
+
+
+/*placeholders*/
+@import "placeholders/960"; 
+@import "placeholders/clearfix"; 
+     
+/*responsive*/
+@import "core/skeleton"; 
+@import "core/layout"; 
+@import "core/text";
+@import "core/transitions";
+
+/*components*/
+@import "widgets/table";
+@import "widgets/form";
+@import "widgets/scroller";
+
+/*widgets*/
+@import "widgets/menu";
+@import "widgets/buttons";
+@import "widgets/select";
+@import "widgets/checkbox";
+
+/*@import "widgets/icons";
+@import "widgets/tables";*/

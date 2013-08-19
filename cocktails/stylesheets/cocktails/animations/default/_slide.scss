@@ -1,4 +1,3 @@
-
 .viewport {
   // margin: 0;
   overflow-x: hidden;
@@ -7,10 +6,7 @@
 
 }
 
-.viewport-transitioning,
-.viewport-transitioning .#{$p}window {
-  // width: 100%;
-  // height: 100%;
+.viewport-transitioning {
   overflow: hidden;
   @include boxSizing;
 }

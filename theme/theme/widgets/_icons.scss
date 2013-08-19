@@ -1,0 +1,23 @@
+@import '../global';
+
+// List the network names
+$networks: twitter facebook skype dribbble gplus
+
+// generate the svg version
+=svg-icons
+@each $icon in $networks
+    .#{$icon}
+    background: image-url("svg/#{$icon}.svg") no-repeat
+
+// png fallback
+=png-icons
+  @each $icon in $networks
+    .#{$icon}
+    background: image-url("png/#{$icon}.png") no-repeat
+
+// output the css
+.svg .social
+  +svg-icons 
+
+.social
+  +png-icons
