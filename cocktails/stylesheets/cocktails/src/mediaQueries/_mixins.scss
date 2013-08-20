@@ -1,0 +1,11 @@
+@mixin responsive($media) {
+    @if $media == small {
+        @media #{$deviceSmall} { @content; }
+    }
+    @else if $media == medium{
+        @media #{$deviceMedium} { @content; }
+    }
+    @else if $media == large{
+        @media #{$deviceLarge} { @content; }
+    }
+}

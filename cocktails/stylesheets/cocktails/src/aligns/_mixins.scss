@@ -1,0 +1,55 @@
+// =============================================
+// 
+// Opacity.
+// 
+// .box {
+//     @include opacity(#000000, 0.1);
+// }
+// 
+// =============================================
+
+$aligns-position:left !default;
+
+@mixin ctAligns($postition:$aligns-position) {
+	text-align: $postition;	
+}
+
+// =============================================
+// 
+// Opacity.
+// 
+// .box {
+//     @include opacity(#000000, 0.1);
+// }
+// 
+// =============================================
+
+@mixin align($align) {
+    @if $align == 'center' {
+        float: none !important;
+        margin: 0 auto !important;
+        display: block !important; 
+        overflow: hidden !important;
+        clear: both !important;
+    }
+    @else if $align == 'right'{
+        text-align: left;
+        input{
+            float: left ;
+            margin: 0 ;
+            display: inline-block ;  
+        }
+    }
+    @else if $align == 'left'{
+        text-align: right;
+        input{
+            float: right ;
+            margin: 0 ;
+            display: inline-block ;  
+        }
+    }
+}
+
+@mixin text($text) {
+    text-align:$text;
+}

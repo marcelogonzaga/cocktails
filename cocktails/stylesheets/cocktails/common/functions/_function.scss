@@ -1,0 +1,33 @@
+
+// =============================================
+// 
+// Opacity.
+// 
+// .box {
+//     @include opacity(#000000, 0.1);
+// }
+// 
+// =============================================
+
+@function em( $fontSize ){
+  @return ( $fontSize / 10 ) + em;
+}
+
+
+// =============================================
+// 
+// Opacity.
+// 
+// .box {
+//      opacity: opacity(#000000, 0.1);
+// }
+// 
+// =============================================
+
+@function opacity( $color:$opacity-color, $opacity:$opacity-default ) {
+     @return rgba($color, $opacity) ;
+}
+
+.box {
+     opacity: opacity(#000000, 0.1);
+}

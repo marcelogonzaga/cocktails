@@ -1,52 +1,58 @@
 // prefix
-$sep : "-";
-$p: ".zh" + $sep;
+$sep:                    "-" !default;
+$p:                      ".zh" + $sep !default;
 
-//body
-$body-background: #f0eeea;
-$body-font-color: #222;
-$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$body-font-weight: normal;
-$body-font-style: normal;
+//bod
+$body-background:        #f0eeea !default;
+$body-font-color:        #222 !default;
+$body-font-family:       "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-weight:       normal !default;
+$body-font-style:        normal !default;
 
 // components
-$comp-container-padding: 10px;
+$comp-container-padding: 10px !default;
 
-/*devices*/
-$deviceSmall: "only screen and (max-width: 479px)";
-$deviceMedium: "only screen and (min-width: 480px) and (max-width: 767px)";
-$deviceLarge: "only screen and (min-width: 768px)";
+// fonte
+$fontFamily:             "Arial", Helvetica, sans-serif !default;
 
-/*fonte*/
-$fontFamily: "Arial", Helvetica, sans-serif !default;
+// header - footer
+$header-size:            56px !default;
+$footer-size:            45px !default;
 
-/*header - footer*/
-$header-size:56px;
-$footer-size:45px;
+// radius
+$radiusMinimum:          5px !default;
+$radiusSmall:            10px !default;
+$radiusMedium:           15px !default;
+$radiusLarge:            20px !default;
+$radiusMax:              25px !default;
 
-/*radius*/
-$radiusMinimum:5px;
-$radiusSmall:10px;
-$radiusMedium:15px;
-$radiusLarge:20px;
-$radiusMax:25px;
+$radiusTop:              10px 10px 0 0 !default;
+$radiusBottom:           0 0 10px 10px !default;
 
-$radiusTop:10px 10px 0 0;
-$radiusBottom:0 0 10px 10px;
+// cores
+$corBackground:          #ebe7df !default;
 
-/*cores*/
-$corBackground: #ebe7df;
+$bar1:                   #ac6e30 !default;
+$bar2:                   #281807 !default;
+$bar3:                   #5C3512 !default;
+$bar4:                   #321D0A !default;
+$barSombra:              #6C5236 !default;
+$barLinha:               #967e63 !default;
 
-$bar1: #ac6e30;
-$bar2: #281807;
-$bar3: #5C3512;
-$bar4: #321D0A;
-$barSombra: #6C5236;
-$barLinha: #967e63;
+$corGradientRed1:        #ce021c !default;
+$corGradientRed2:        #890e1b !default;
 
-$corGradientRed1: #ce021c;
-$corGradientRed2: #890e1b;
+$corGradientGreen1:      #99cc00 !default;
+$corGradientGreen2:      #006600 !default;
 
-$corGradientGreen1: #99cc00;
-$corGradientGreen2: #006600;
+$fontSize:               13 !default;
+
+$opacity-color:          #000000 !default;
+$opacity-opacity:        0.5 !default;
+
+$backgroundAttach:       scroll;
+$backgroundClip:         border-box;
+$backgroundOrigin:       padding-box;
+$backgroundSize:         auto;
+$backgroundColor:        transparent;
 

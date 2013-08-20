@@ -80,9 +80,9 @@ Version: @@ver@@ Timestamp: @@timestamp@@
     margin-right: 26px;
     display: block;
     overflow: hidden;
-
+    font-size: em(13);
     white-space: nowrap;
-
+line-height: 42px;
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;

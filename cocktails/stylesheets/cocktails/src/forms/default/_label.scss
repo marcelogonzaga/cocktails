@@ -1,0 +1,10 @@
+
+.form-lbl, .form label {
+	display: block;
+	height: auto;
+	margin: 0.2em 0 0.5em;
+	font-size: em(13);
+	color: #909598;
+	@include ellipsis;
+	position: relative;
+}

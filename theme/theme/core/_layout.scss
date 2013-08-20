@@ -20,7 +20,7 @@
 			margin: 0 1px;		
 			display: block;
 			line-height: 36px;
-			@include font-size(14);
+			font-size: em(14);
 			color: #999999;
 			background: #393b41;
 
@@ -234,14 +234,14 @@
     background: #393b41;
     height: 50px;
     width: 50px;
-    @include font-size(22);
+    font-size: em(22);
     color: #ffffff;
     text-align: center;
     line-height: 45px;
     float: left;
     &.label{
         text-align: left;
-        @include font-size(14);
+        font-size: em(14);
         background: none;
         margin-left: 10px;
     }

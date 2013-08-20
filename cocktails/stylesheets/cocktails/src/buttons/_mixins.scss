@@ -1,0 +1,86 @@
+@mixin pushbutton($colour: $orange, $font-colour: rgb(255,255,255)) {
+    color: $font-colour;
+    text-shadow: 0 1px 0 darken($colour, 10%);
+    line-height: 1;
+    padding: 6px 40px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid $colour;
+    border-radius: 4px;
+    background-color: darken($colour, 10%);
+    box-shadow: 0 4px 0 darken($colour, 20%);
+    @include transition(all .1s linear);
+    &:hover {
+        border-color: $colour;
+        color: mix($colour, $font-colour, 10%);
+    }
+    &:focus {
+        border-color: darken($colour, 30%);
+    }
+    &:active {
+        border-color: darken($colour, 20%);
+        bottom: -4px;
+        box-shadow: none;
+    }
+}
+
+
+
+@mixin button($type) {
+    @if $type == ico {
+        border: none !important;
+    }
+    @else if $type == iconButton {
+        background: transparent !important;
+        border: none !important;
+        color: #ffffff;
+    }
+
+    @else if $type == red  or $type == green or $type == select {
+        padding: 10px;
+        border-width: 2px;
+        border-style: solid ;
+        border-color: #AA6D2F #C99E5D #D3AE6D;
+        vertical-align: middle;
+        font-weight: bold;
+        text-align: center; 
+        color: #ffffff;
+        margin: 0 1% 2% 0;
+        width: 99%;
+        @include shadow($type:input);
+    }
+
+    outline: 0;
+    @include box-sizing(border-box);
+    @include border-radius($radiusSmall);
+    @include ellipsis;
+
+    &:focus { 
+        @if $type == ico { 
+
+        } 
+        @else if $type == red{ 
+
+        } 
+        @else if $type == green{ 
+
+        } 
+        text-decoration: none; 
+    } 
+    &:active { 
+        @if $type == ico { 
+
+        } 
+        @else if $type == red{ 
+
+        } 
+        @else if $type == green{ 
+
+        } 
+
+    } 
+
+    &[disabled] { 
+
+    } 
+}
