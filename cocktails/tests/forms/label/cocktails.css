@@ -12,10 +12,9 @@ h1 {
   margin-bottom: 1em;
 }
 
-.asdasdasdasdasdasdasd {
-  color: red;
-}
-
-.time {
-  color: red;
+label {
+  clear: both;
+  float: none;
+  display: block;
+  margin-bottom: 10px;
 }

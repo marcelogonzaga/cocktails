@@ -1,3 +1,63 @@
-.asdasdasdasdasdasdasd{
-	color:red;
+
+span.times {
+  float:left;
+  width:100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.times:before{
+  content:":";
+  position: absolute;
+  font-size:32px;
+  border-color:#bbbbbb ;
+  height: 40px;
+  color:#999999;
+  width:10px;
+  top:0;
+  left: 33%;
+  line-height: 32px;
+}
+
+.times:after{
+  content:":";
+  position: absolute;
+  font-size:32px;
+  border-color:#bbbbbb  ;
+  height: 40px;
+  color:#999999;
+  width:10px;
+  top:0;
+  right: 33%;
+  line-height: 32px;
+}
+
+select.time {
+  margin: 0;
+  padding: 10px;
+  background: #f9f9f9;
+  border-style:solid;
+  border-width:1px;
+  font-style:italic;
+  outline:0;
+  -webkit-appearance: none;
+  float: left;
+}
+
+/*times*/
+
+.selectHours{
+  border-color:#bbbbbb transparent #bbbbbb  #bbbbbb;
+  border-radius:5px 0 0 5px;
+  width: 33.3% !important;
+}
+.selectMinutes{
+  border-color:#bbbbbb transparent #bbbbbb transparent;
+  width: 33.3% !important;
+  border-radius: 0;
+}
+.selectSeconds{
+  border-color:#bbbbbb  #bbbbbb  #bbbbbb  transparent ;
+  border-radius:0 5px 5px 0;
+  width: 33.3% !important;
 }
