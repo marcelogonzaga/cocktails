@@ -4,15 +4,22 @@
 // 
 // =============================================
 
-@import "compass/css3";
+@import 
+	"compass/css3";
 
 
-html {
+// =============================================
+// 
+// Import compass framework
+// 
+// =============================================
+
+
+@import 
+ 	"cocktails/bases/all";
+
+body {
     padding: 1em;
+    font-family:$body-font-family;
     @include background(linear-gradient(#ddd, #fff) no-repeat);
-}
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 1em;
 }

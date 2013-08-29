@@ -1,10 +1,26 @@
 @import
 	"tests";
 
+/* 
+ * =============================================
+ *  -> ini Labels 
+ * =============================================
+*/
 
-label{
-  clear:both;
-  float:none;
-  display: block;
-  margin-bottom:10px;
+@import
+ 	"cocktails/src/forms/default/label",
+ 	"cocktails/placeholders/all";
+
+
+/* test */
+
+.noLabel{
+	background: #ccc;
+	height: 20px;
 }
+
+/* 
+ * =============================================
+ *  -> end Labels 
+ * =============================================
+*/

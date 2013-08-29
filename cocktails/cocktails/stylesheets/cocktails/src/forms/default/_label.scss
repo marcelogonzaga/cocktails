@@ -1,0 +1,19 @@
+.label{
+  clear:both;
+  float:none;
+  display: block;
+  margin-bottom:10px;
+
+  &.noLabel{
+  	@include hideText;
+  }
+  &.small{
+  	@extend %small;
+  }
+  &.medium{
+  	@extend %medium;
+  }
+  &.large{
+  	@extend %large;
+  }
+}

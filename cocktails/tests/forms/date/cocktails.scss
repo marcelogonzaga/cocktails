@@ -1,0 +1,26 @@
+@import
+	"tests";
+
+/* 
+ * =============================================
+ *  -> ini Labels 
+ * =============================================
+*/
+
+@import
+ 	"cocktails/src/forms/default/date",
+ 	"cocktails/placeholders/all";
+
+
+/* test */
+
+.noLabel{
+	background: #ccc;
+	height: 20px;
+}
+
+/* 
+ * =============================================
+ *  -> end Labels 
+ * =============================================
+*/

@@ -58,6 +58,7 @@
 
 .#{$p}body{
     z-index: 0;
+    background-color: $body-background;
 }
 
 .#{$p}viewport{

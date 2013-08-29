@@ -1,4 +1,3 @@
-
 // =============================================
 // 
 // calc font to em.
@@ -9,11 +8,9 @@
 // 
 // =============================================
 
-
 @function emCalc($value){
   @return ($value / $emBase) + em;
 }
-
 
 // =============================================
 // 
@@ -25,12 +22,9 @@
 // 
 // =============================================
 
-
 @function converPx($value){
   @return ($value / $emBase) + em;
 }
-
-
 
 // =============================================
 // 
@@ -42,11 +36,9 @@
 // 
 // =============================================
 
-
 @function opacity($color:$opacity-color, $opacity:$opacity-default) {
 	@return rgba($color, $opacity);
 }
-
 
 // =============================================
 // 
@@ -63,4 +55,3 @@
    $bodyFontBase: 1 / ($value / $emBase);
    @return percentage($bodyFontBase);
 }
-
