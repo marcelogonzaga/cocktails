@@ -1,0 +1,142 @@
+// =============================================
+// 
+// Link Colour Setting.
+// 
+// a{
+//     @include linkColor(#000000);
+// }
+// 
+// =============================================
+
+@mixin linkColor($color) {
+    color: $color;
+    &:hover, &:active, &:focus {
+       color: lighten($color, 20%);
+   }
+}
+
+// =============================================
+// 
+// Hiding text or image replacement.
+// 
+// .logo {
+//     @include hideText;
+// }
+// 
+// =============================================
+
+@mixin hideText{
+    overflow:hidden;
+    text-indent:-9000px;
+    display:block;
+    font-size: 0;
+    text-shadow: none;
+    color: transparent;
+}
+
+// =============================================
+// 
+// Ellipsis.
+// 
+// .box {
+//     @include ellipsis;
+// }
+// 
+// =============================================
+
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// =============================================
+// 
+// Center Block.
+// 
+// .box {
+//     @include centerBlock;
+// }
+// 
+// =============================================
+
+@mixin centerBlock($margin: $margin) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// =============================================
+// 
+// Layout 
+// 
+// =============================================
+
+@mixin position($top: initial, $left: initial, $bottom: initial,  $right: initial, $type: none) {
+    @if $type == fixed {
+        position: fixed; 
+    }
+    @if $type == absolute {
+        position: absolute;  
+    }
+    @if $type == relative  {
+        position: relative;
+        height: 100%;
+    }
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    width: 100%;   
+    overflow: hidden;
+    z-index: 1;
+    @include box-sizing(border-box);
+}
+
+// =============================================
+// 
+// shadow 
+// 
+// =============================================
+
+@mixin shadow($type){
+    @if $type == top {
+        @include box-shadow($barSombra 0 3px 10px 0);
+    }
+    @if $type == input {
+        @include box-shadow(#7A5E41 1px 2px 3px); 
+    }
+    @if $type == comanda {
+        @include box-shadow(#6C462e 2px 3px 5px, #8F602c 0 1px 27px 0 inset); 
+    }
+} 
+
+// =============================================
+// 
+// Background Gradient 
+// 
+// =============================================
+
+@mixin backgroundGradient($alpha, $omega){
+    @include background(linear-gradient(top, $alpha 0%,$omega 100%));
+    @include filter-gradient($alpha, $omega, vertical);
+}
+
+
+// =============================================
+// 
+// Responsive 
+// 
+// =============================================
+
+@mixin responsive($media) {
+    @if $media == small {
+        @media #{$deviceSmall} { @content; }
+    }
+    @else if $media == medium{
+        @media #{$deviceMedium} { @content; }
+    }
+    @else if $media == large{
+        @media #{$deviceLarge} { @content; }
+    }
+}

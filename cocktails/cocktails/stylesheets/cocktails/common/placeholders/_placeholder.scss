@@ -1,0 +1,44 @@
+// =============================================
+// 
+// Hide elements
+// 
+// a{
+//     @extend %hide;
+// }
+// 
+// =============================================
+
+%hide{
+  display: none !important;
+}
+
+// =============================================
+// 
+// clarfix 
+// 
+// a{
+//     @extend %hide;
+// }
+// 
+// =============================================
+
+%clearfix {
+	display: block;
+}
+
+%clearfix:before,
+%clearfix:after{ 
+  content: " ";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  // @import font-size(0);
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+%clearfix:after{
+  clear: both;
+}
+

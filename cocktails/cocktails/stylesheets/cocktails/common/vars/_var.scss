@@ -1,0 +1,64 @@
+// prefix
+$sep                         : "-" !default;
+$prefix                      : "ct" !default;
+$p                           : $prefix + $sep !default;
+ 
+//bod: 
+$body-background             : #f0eeea !default;
+$body-font-color             : #222 !default;
+$body-font-family            : "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-weight            : normal !default;
+$body-font-style             : normal !default;
+
+// components: 
+$comp-container-padding      : 10px !default;
+
+// fonte: 
+$fontFamily                  : "Arial", Helvetica, sans-serif !default;
+
+// header - footer: 
+$header-size                 : 56px !default;
+$footer-size                 : 45px !default;
+
+// radius: 
+$radiusMinimum               : 5px !default;
+$radiusSmall                 : 10px !default;
+$radiusMedium                : 15px !default;
+$radiusLarge                 : 20px !default;
+$radiusMax                   : 25px !default;
+ 
+$radiusTop                   : 10px 10px 0 0 !default;
+$radiusBottom                : 0 0 10px 10px !default;
+ 
+// cores: 
+$corBackground               : #ebe7df !default;
+ 	
+$bar1                        : #ac6e30 !default;
+$bar2                        : #281807 !default;
+$bar3                        : #5C3512 !default;
+$bar4                        : #321D0A !default;
+$barSombra                   : #6C5236 !default;
+$barLinha                    : #967e63 !default;
+ 
+$corGradientRed1             : #ce021c !default;
+$corGradientRed2             : #890e1b !default;
+ 
+$corGradientGreen1           : #99cc00 !default;
+$corGradientGreen2           : #006600 !default;
+ 
+$opacity-color               : #000000 !default;
+$opacity-opacity             : 0.5 !default;
+ 
+$backgroundAttach            : scroll !default;
+$backgroundClip              : border-box !default;
+$backgroundOrigin            : padding-box !default;
+$backgroundSize              : auto !default;
+$backgroundColor             : transparent !default;
+ 
+$emBase                      : 10 !default;
+$fontBase                    : fontBase(16) !default;
+$bodyFontBase                : $fontBase !default;
+ 
+$deviceSmall                 : "only screen and (max-width: 479px)" !default;
+$deviceMedium                : "only screen and (min-width: 480px) and (max-width: 767px)" !default;
+$deviceLarge                 : "only screen and (min-width: 768px)" !default;

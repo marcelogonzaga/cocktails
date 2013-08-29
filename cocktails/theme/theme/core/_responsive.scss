@@ -1,0 +1,31 @@
+@media #{$deviceMedium}, #{$deviceSmall} {
+
+	.#{$p}footer{
+		display: none;
+	}
+
+	.#{$p}bar{
+		display: none;
+	}
+
+	.#{$p}container{
+		
+		bottom:0; 
+	}
+
+	.#{$p}panel{
+		margin-left: 0;
+	}
+
+	.#{$p}btn {
+		padding: 2px 5px !important;
+		font-size: emCalc(12);
+		margin:8px 2px;
+	}
+
+	.#{$p}menuContainer{
+		bottom:0; 
+		
+	}
+
+}

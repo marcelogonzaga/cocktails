@@ -1,0 +1,20 @@
+// =============================================
+// 
+// Import compass framework
+// 
+// =============================================
+
+@import "compass/css3";
+
+
+html
+{
+    padding: 1em;
+    @include background(linear-gradient(#ddd, #fff) no-repeat);
+}
+
+h1
+{
+    font-size: 2em;
+    margin-bottom: 1em;
+}

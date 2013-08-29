@@ -1,0 +1,66 @@
+
+// =============================================
+// 
+// calc font to em.
+// 
+// .box {
+//     font-size: em(22);
+// }
+// 
+// =============================================
+
+
+@function emCalc($value){
+  @return ($value / $emBase) + em;
+}
+
+
+// =============================================
+// 
+// calc px to em.
+// 
+// .box {
+//     font-size: em(22);
+// }
+// 
+// =============================================
+
+
+@function converPx($value){
+  @return ($value / $emBase) + em;
+}
+
+
+
+// =============================================
+// 
+// Opacity.
+// 
+// .box {
+//      opacity: opacity(#000000, 0.1);
+// }
+// 
+// =============================================
+
+
+@function opacity($color:$opacity-color, $opacity:$opacity-default) {
+	@return rgba($color, $opacity);
+}
+
+
+// =============================================
+// 
+// Calc fontBase.
+// 
+// body {
+//      font-size:  fontBase( 16 );
+// }
+// 
+// =============================================
+
+
+@function fontBase( $value ){
+   $bodyFontBase: 1 / ($value / $emBase);
+   @return percentage($bodyFontBase);
+}
+
